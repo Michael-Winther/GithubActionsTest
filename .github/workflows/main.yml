@@ -12,10 +12,3 @@ jobs:
       
       - run: |
           ci/build-app.sh
-          
-      - uses: actions/checkout@v4
-
-      - name: List files in the repository
-        run: |
-          echo "The repository ${{ github.repository }} contains the following files:"
-          tree
